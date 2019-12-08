@@ -17,6 +17,7 @@
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script>
         Vue.component('todo-item', {
+            //子单元通过 prop 接口与父单元进行了良好的解耦
             props: ['todo'],
             template: '<li>{{ todo.text }}</li>'
         })
